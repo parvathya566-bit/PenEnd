@@ -1,101 +1,63 @@
-<img width="3188" height="1202" alt="frame (3)" src="https://github.com/user-attachments/assets/517ad8e9-ad22-457d-9538-a9e62d137cd7" />
 
 
-# [Project Name] 🎯
+# PenEnd 🎯
 
 
 ## Basic Details
-### Team Name: [Name]
+### Team Name: MonoHack
 
 
 ### Team Members
-- Team Lead: [Name] - [College]
-- Member 2: [Name] - [College]
-- Member 3: [Name] - [College]
+- Team Lead:Parvathy Abhilash- College Of Engineering Munnar
+- Member 2: Saniya Ajith - College Of Engineering Munnar
+
 
 ### Project Description
-[2-3 lines about what your project does]
+PenEnd is a fun and interactive tool that helps you estimate how many words your pen can still write based on its current ink level. Simply select your pen type, adjust the ink level slider, and the site will calculate the estimated remaining word count. If your ink is running low, you'll get a warning — complete with sound — letting you know your pen is about to die!
 
 ### The Problem (that doesn't exist)
-[What ridiculous problem are you solving?]
+To check how many words can be written before pen dies.
 
 ### The Solution (that nobody asked for)
-[How are you solving it? Keep it fun!]
+This website estimates how many words your pen can still write based on the ink level you choose. Pick your pen type, slide the ink meter, and we’ll do the math! If you're low on ink, you’ll get a dramatic warning — complete with sound.
 
 ## Technical Details
 ### Technologies/Components Used
 For Software:
-- [Languages used]
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
-
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
-
-### Implementation
-For Software:
-# Installation
-[commands]
-
-# Run
-[commands]
+- HTML,CSS
+- VSCODE
 
 ### Project Documentation
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot1][1.png]
+checking the number of words that can be written by a ballpoint pen with medium level ink.
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot2][2.png]
+checking the number of words that can be written by a gel pen with low ink.
 
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
+![Screenshot3][3.png]
+checking the number of words that can be written by a foundain pen with full ink.
 
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
 
-For Hardware:
-
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
+![Final][3.png]
+Checking the number of words that can be written by ballpoint,gel and foundain pen befoe the pen dies.
 
 ### Project Demo
 # Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
+https://drive.google.com/file/d/1voi2R46_PCZOpXEMnQ0tqH0G-g__U3QO/view?usp=drivesdk
+Checking the number of words that can be written by ballpoint,gel and foundain pen befoe the pen dies.
 
-# Additional Demos
-[Add any extra demo materials/links]
 
 ## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+- Saniya Ajith: Frontend
+- Parvathy Abhilash: Frontend
+
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
 
 ![Static Badge](https://img.shields.io/badge/TinkerHub-24?color=%23000000&link=https%3A%2F%2Fwww.tinkerhub.org%2F)
 ![Static Badge](https://img.shields.io/badge/UselessProjects--25-25?link=https%3A%2F%2Fwww.tinkerhub.org%2Fevents%2FQ2Q1TQKX6Q%2FUseless%2520Projects)
-
 

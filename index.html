@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pen Ink Estimator</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🖊️ PenEnd</h1>
+    <p>Slide to select your current ink level and we'll estimate how many words are left.</p>
+
+    <label for="penType">Select Pen Type:</label>
+    <select id="penType">
+      <option value="ballpoint">Ballpoint</option>
+      <option value="gel">Gel</option>
+      <option value="fountain">Fountain</option>
+    </select>
+
+    <label for="inkSlider">Ink Level:</label>
+    <div class="slider-group">
+      <input type="range" id="inkSlider" min="0" max="100" value="100" oninput="updateSliderLabel(this.value)" />
+      <span id="sliderValue">100%</span>
+    </div>
+
+    <button onclick="estimateWords()">Estimate Words</button>
+
+    <div id="result" class="result-text"></div>
+
+    <div class="ink-meter-container">
+      <div id="inkMeter" class="ink-meter"></div>
+    </div>
+  </div>
+
+  <audio id="penSound" src="pen-die.mp3" preload="auto"></audio>
+
+  <script>
+    const penLifespans = {
+      ballpoint: 80000,
+      gel: 35000,
+      fountain: 15000
+    };
+
+    function updateSliderLabel(value) {
+      document.getElementById("sliderValue").textContent = value + "%";
+    }
+
+    function estimateWords() {
+      const penType = document.getElementById("penType").value;
+      const inkLevel = parseInt(document.getElementById("inkSlider").value);
+      const resultEl = document.getElementById("result");
+      const meterEl = document.getElementById("inkMeter");
+      const penSound = document.getElementById("penSound");
+
+      resultEl.classList.remove("shake", "fade");
+      meterEl.classList.remove("fade");
+
+      const maxWords = penLifespans[penType];
+      const estimatedWords = Math.floor((inkLevel / 100) * maxWords);
+
+      meterEl.style.width = inkLevel + "%";
+
+      if (estimatedWords <= 0) {
+        resultEl.innerText = "❌ Your pen has no ink left!";
+        penSound.play();
+        resultEl.classList.add("shake");
+        meterEl.classList.add("fade");
+      } else if (estimatedWords < 1000) {
+        resultEl.innerText = `⚠️ Your pen is about to die! Only ~${estimatedWords.toLocaleString()} words left.`;
+        penSound.play();
+        resultEl.classList.add("shake");
+        meterEl.classList.add("fade");
+      } else {
+        resultEl.innerText = `✅ You can still write ~${estimatedWords.toLocaleString()} words.`;
+      }
+    }
+
+    // Initialize slider label on load
+    window.onload = function () {
+      updateSliderLabel(document.getElementById("inkSlider").value);
+    };
+  </script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Background image settings */
+  background-image: url('ink-6887056.jpg');
+  background-size: cover;      /* Ensures the image covers the whole screen */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed; /* Optional: Keeps the background fixed during scroll */
+}
+
+
+.container {
+  background-color: rgba(255, 255, 255, 0.7); /* white with 70% opacity */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 450px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+select {
+  padding: 10px;
+  font-size: 1em;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 300px;
+}
+
+.slider-group {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+input[type="range"] {
+  width: 70%;
+}
+
+#sliderValue {
+  min-width: 40px;
+  font-weight: bold;
+}
+
+button {
+  background-color: #4a90e2;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  margin-top: 20px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #357ab8;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.ink-meter-container {
+  margin-top: 20px;
+  background: #ddd;
+  height: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.ink-meter {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(to right, #4a90e2, #82cfff);
+  transition: width 0.5s ease;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-5px); }
+  40%, 80% { transform: translateX(5px); }
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0.1; }
+}
+
+.shake {
+  animation: shake 0.6s;
+  color: red;
+}
+
+.fade {
+  animation: fadeOut 1s forwards;
+}

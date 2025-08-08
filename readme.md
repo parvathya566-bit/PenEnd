@@ -31,17 +31,17 @@ For Software:
 For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1][1.png]
+![Screenshot1]https://drive.google.com/file/d/1w505FOnw8VlM1sm4isNfHIaK0mSiWZRD/view?usp=drivesdk
 checking the number of words that can be written by a ballpoint pen with medium level ink.
 
-![Screenshot2][2.png]
+![Screenshot2]https://drive.google.com/file/d/1w840CIqD6HLd8SVqlNJS--hfhulRxbjY/view?usp=drivesdk
 checking the number of words that can be written by a gel pen with low ink.
 
-![Screenshot3][3.png]
+![Screenshot3]https://drive.google.com/file/d/1wVYMzWTeN0V0v5cbue_p77eHOkRv2kA_/view?usp=drivesdk
 checking the number of words that can be written by a foundain pen with full ink.
 
 
-![Final][3.png]
+![Final]https://drive.google.com/file/d/1wVYMzWTeN0V0v5cbue_p77eHOkRv2kA_/view?usp=drivesdk
 Checking the number of words that can be written by ballpoint,gel and foundain pen befoe the pen dies.
 
 ### Project Demo
